@@ -37,6 +37,43 @@
         font-weight: 500;
         transition: color 0.3s;
       }
+      .intro {
+        text-align: center;
+        padding: 80px 20px;
+      }
+      .intro h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #5a3e1f;
+      }
+      .intro p {
+        font-size: 20px;
+        max-width: 700px;
+        margin: 0 auto 40px;
+      }
+
+      .tagline {
+        font-style: italic;
+        font-size: 18px;
+        margin-top: 20;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #d4a017;
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .tagline:hover {
+        transform: translateY(-3px);
+      }
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #e0c9a6;
+        margin: 40px auto;
+        width: 80%;
+      }
     </style>
   </head>
   <body>
@@ -54,16 +91,45 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="intro">
         <h1>Authentic Thekua Snacks</h1>
         <p>Handcrafted with tradition, love, and the finest ingredients.</p>
         <span class="tagline">Our Story</span>
       </section>
 
       <hr />
-
-      <section class="story-section">
-        <h2>Our Story</h2>
+      <section id="product" class="product-section">
+        <h2 class="section-title">Our Signature Traditional Thekua snacks</h2>
+        <div class="product-card">
+          <div class="product-info">
+            <h3 class="product-name">Authentic Thekua</h3>
+            <div class="product-rating">
+              <span>4.8/5 (158 Reviews)</span>
+            </div>
+            <div class="product-price">$12.99 per box (12 Thekua)</div>
+            <p class="product-description">
+              our Signature Thekua cookies are handmade using a Traditional
+              recipe passed down through generations. Made with whole wheat
+              flour, sugar , ghee and a blend of cardamon and fennel seeds,
+              these cookies offer a perfect balance of sweetness and texture.
+            </p>
+            <h4>key ingredients:</h4>
+            <ul class="ingredients-list">
+              <li>Stone-ground whole wheat flour</li>
+              <li>Organic jaggery (unrefined cane sugar)</li>
+              <li>Pure ghee (clarified butter)</li>
+              <li>freshly ground cardamon</li>
+              <li>toasted fennel seeds</li>
+              <li>coconut flakes</li>
+            </ul>
+            <div class="quantity-selector">
+              <button class="quantity-btn">-</button>
+              <input type="number" class="quantity-input" value="1" min="1" />
+              <button class="quantity-btn">+</button>
+            </div>
+            <button class="buy-btn">Buy now</button>
+          </div>
+        </div>
       </section>
     </main>
   </body>
