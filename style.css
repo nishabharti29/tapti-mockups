@@ -259,4 +259,27 @@
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 0.1);
   }
-  
+		  /* FAQ Section */
+      .faq-section {
+        padding: 80px 20px;
+        background: white;
+    }
+    
+    .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e0c9a6;
+        padding-bottom: 20px;
+    }
+    
+    .faq-question {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #5a3e1f;
+    }
+ 
